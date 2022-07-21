@@ -1,0 +1,607 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway";
+}
+
+/********************
+****Header
+**********************/
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0rem auto;
+}
+header nav .right-nav {
+  display: flex;
+  gap: 2rem;
+}
+header nav .right-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+header nav .right-nav a:hover {
+  color: #4411a3;
+}
+header nav .mb-menu {
+  display: none;
+}
+header nav button {
+  display:none !important;
+}
+/************************
+*****Media Screen
+*************************/
+@media screen and (max-width: 540px) {
+  header nav button {
+    width: 50px;
+  }
+  header nav {
+    width: 94%;
+  }
+  header nav .right-nav {
+    position: absolute;
+    top: 61px;
+    right: 11px;
+    color: white;
+    z-index: 3;
+    text-align: center;
+    background-color: white;
+    flex-direction:column;
+    padding: 10px;
+    gap: 1rem;
+}
+  header nav .mb-menu {
+    display: block;
+  }
+}
+/************************
+*****Main
+*************************/
+main .main-image {
+  position: relative;
+  z-index: 1;
+}
+main .main-image img {
+  width: 100%;
+}
+main .main-image .filter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #4411a3;
+  opacity: 0.5;
+}
+main .main-image .search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+main .main-image .search .search-container h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+main .main-image .search .search-container .form {
+  width: 100%;
+  position: relative;
+}
+main .main-image .search .search-container .form input {
+  width: 70%;
+  margin: 2rem 4rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 0;
+}
+main .main-image .search .search-container .form .search-icon {
+  width: 50px;
+  position: absolute;
+  right: 8rem;
+  top: 30%;
+}
+.heading {
+  text-align: center;
+  margin: 2rem auto;
+}
+.heading p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+main .heading img {
+  margin: 1rem auto;
+}
+main .popular-places {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 80%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+main .popular-places .category-flex {
+  width: 100%;
+  text-align: center;
+}
+main .popular-places .category-flex img {
+  width: 100%;
+}
+.popular-places .category-flex:hover {
+  transform: scale(2);
+  color: #4411a3;
+}
+main .popular-places p {
+  text-align: center;
+  font-weight: 800;
+  margin: 0.5rem 0rem;
+}
+/*****************************************
+***Media Screen
+*********************************************/
+@media only screen and (max-width: 600px) {
+  main .main-image .search .search-container h1 {
+    font-size: 1.5rem;
+  }
+  main .main-image .search .search-container .form input {
+    margin: 1rem auto;
+  }
+  main .main-image .search .search-container .form .search-icon {
+    right: 3rem;
+    top: 25%;
+  }
+}
+/*****************************************
+***Image-grid
+*********************************************/
+main .attractions .heading {
+  padding-top: 2rem;
+}
+main .attractions .grid-container {
+  width: 80%;
+  margin: 3rem auto;
+}
+main .attractions .grid-container .grid-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  width: 100%;
+}
+main .attractions .grid-container .grid-items .item {
+  width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+main .attractions .grid-container .grid-items .item .item-image {
+  position: relative;
+  width: 100%;
+}
+main .attractions .grid-container .grid-items .item .item-image img {
+  width: 100%;
+}
+main .attractions .grid-container .grid-items .item .item-image img.like {
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  width: 40px;
+}
+main .attractions .grid-container .grid-items .item .item-text {
+  width: 95%;
+}
+main .attractions .grid-container .grid-items .item .item-text h1 {
+  padding: 1rem;
+}
+main .attractions .grid-container .grid-items .item .item-text p {
+  padding: 1rem;
+}
+/************************
+**Media Screen
+**************************/
+@media screen and (max-width: 540px) {
+  main .attractions .grid-container .grid-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/***************************************
+*********Videos
+******************************************/
+.videos {
+  position: relative;
+  z-index: 1;
+}
+.videos .background img {
+  width: 100%;
+  height: 100%;
+}
+.videos .background .videos-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.videos .background .videos-container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.videos .background .videos-container .text p {
+  color: #fff;
+  padding: 0.3rem 0rem;
+}
+
+.videos .background .videos-container .text span {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 2rem;
+}
+.videos .background .videos-container .text img {
+  width: 100px;
+}
+.videos .background .videos-container video {
+  place-self: center;
+  width: 40%;
+}
+.videos .background .filter {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 100;
+}
+/***************************************
+*******Media Screen
+*******************************************/
+@media only screen and (max-width: 600px) {
+  .videos .background {
+    height: 287px;
+  }
+  .videos .background .videos-container video {
+    width: 65%;
+  }
+}
+/***************************************
+*******SUBSCRIPTION
+*******************************************/
+.subscription {
+  position: relative;
+  z-index: 1;
+}
+.subscription img {
+  width: 100%;
+}
+.subscription .filter {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4411a3;
+  opacity: 0.5;
+  z-index: 100;
+}
+.subscription .text {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+.subscription .text .discount {
+  text-align: center;
+  color: #fff;
+}
+.subscription .text .discount p {
+  font-size: 2rem;
+  padding: 1rem 0rem;
+}
+.subscription .text .discount span {
+  opacity: 0.7;
+}
+.subscription .text .input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 5rem;
+}
+.subscription .text .input .email input {
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+  color: #fff;
+}
+.subscription .text .input .subscribe-btn button {
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  border: 0;
+  color: #4411a3;
+}
+.maps img {
+  width: 100%;
+}
+/***************************************
+**Media Screen
+*****************************************/
+@media only screen and (max-width: 600px) {
+  .subscription img {
+    width: 100%;
+    height: 187px;
+  }
+  .subscription .text {
+    top: 5%;
+    gap: 1rem;
+  }
+  .subscription .text .discount p {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+  }
+  .subscription .text .discount span {
+    font-size: 0.8rem;
+  }
+  .subscription .text .input {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .subscription .text .input .email input {
+    padding: 0.2rem 0.8rem;
+    width: 80%;
+  }
+  .subscription .text .input .subscribe-btn button {
+    padding: 0.4rem 1rem;
+  }
+}
+/***************************************
+**Footer
+*****************************************/
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0rem;
+}
+footer .footer-container .left-footer {
+  display: flex;
+  gap: 4rem;
+}
+footer .footer-container .left-footer .quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-container h1 {
+  font-size: 1rem;
+}
+footer .footer-container .left-footer .quick-links a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-container .left-footer .address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-container .right-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-container .right-footer .email {
+  position: relative;
+  width: 100%;
+}
+footer .footer-container .right-footer .email input {
+  padding: 0.5rem 1rem;
+  width: 82.5%;
+}
+footer .footer-container .right-footer .email img {
+  width: 35.5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+footer .copyright {
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+footer .copyright p {
+  padding: 2rem 0rem;
+}
+/************************
+*****Media Screen
+*************************/
+@media screen and (max-width: 540px) {
+  footer .footer-container {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    gap: 2rem;
+  }
+  footer .footer-container .left-footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .footer-container .right-footer .email input {
+    width: 70%;
+  }
+  footer .footer-container .right-footer .email img {
+    right: 4rem;
+  }
+}
+/************************
+*****Category
+*************************/
+.places-container {
+  width: 90%;
+  margin: 80px auto;
+}
+.places-container .places-items {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 50px;
+}
+.places-container .places-items .category-list {
+  width: 100%;
+}
+.places-container .places-items .category-list .category-image {
+  position: relative;
+  width: 100%;
+}
+.places-container .places-items .category-list .category-image img {
+  width: 100%;
+}
+.places-container .places-items .category-list .category-image .like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 40px;
+}
+
+.places-container
+  .places-items
+  .category-list
+  .category-text
+  .category-heading {
+  font-size: 20px;
+  padding: 1rem 0rem;
+}
+.places-container
+  .places-items
+  .category-list
+  .category-text
+  .detailed-description
+  p {
+  text-align: justify;
+  letter-spacing: normal;
+  line-height: 20px;
+  font-size: 15px;
+  padding: 1rem 0rem;
+}
+.places-container .places-items .category-list .category-text .input-button {
+  margin: 20px 0px;
+}
+.places-container .places-items .category-list .category-text .input-button a {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #4411a3;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+}
+/***********************
+*******Media Screen
+*************************/
+@media screen and (max-width: 540px) {
+  .places-container .places-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .places-container {
+    margin: 120px auto;
+  }
+  h2.place-heading {
+    font-size: 2rem;
+  }
+}
+/************************
+*****Favorites
+*************************/
+.section2 {
+  margin: 20px auto;
+  width: 80%;
+}
+.section2 .heading-favorite {
+  color: #4411a3;
+  font-size: 40px;
+  padding: 2rem 0rem;
+  font-size: 5rem;
+}
+.section2 .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.section2 .grid .favorite-list {
+  width: 100%;
+}
+.section2 .grid .favorite-list .favorite-image {
+  width: 100%;
+  position: relative;
+}
+.section2 .grid .favorite-list .favorite-image img {
+  width: 100%;
+}
+.section2 .grid .favorite-list .favorite-image .like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 40px;
+}
+
+.section2 .grid .favorite-list {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section2 .grid .favorite-list .input-button {
+  margin: 20px 0px;
+}
+.section2 .grid .favorite-list .input-button a {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #4411a3;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+}
+.textcontent {
+  font-size: 20px;
+}
+/*******************
+***Media Screen
+*********************/
+@media screen and (max-width: 540px) {
+  .section2 .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section2 .heading-favorite {
+    font-size: 2rem;
+  }
+}
+/*******************
+***Media Screen
+**************************************/
+a.details-link {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+
+

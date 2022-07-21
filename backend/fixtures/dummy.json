@@ -1,0 +1,715 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2022-06-21T19:05:01.449Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Hollywood",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2022-06-21T19:05:52.955Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "Miami",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2022-06-21T19:06:23.331Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "New York",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2022-06-21T19:09:13.634Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "New York",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2022-06-21T19:49:38.986Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "San Franscisco",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2022-06-21T19:50:08.269Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "5",
+            "object_repr": "Las Vegas",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2022-06-21T19:51:15.242Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "New York",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2022-06-21T23:40:13.524Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "San Franscisco",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2022-06-24T15:49:24.052Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "San Franscisco",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Detailed Description\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2022-06-24T16:17:52.685Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "San Franscisco",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2022-06-24T16:44:57.715Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "New York",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Detailed Description\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2022-06-24T17:02:05.889Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Las Vegas",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2022-06-24T17:03:35.773Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Las Vegas",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2022-06-24T17:07:53.424Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Walt Disney World",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add post",
+            "content_type": 7,
+            "codename": "add_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change post",
+            "content_type": 7,
+            "codename": "change_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete post",
+            "content_type": 7,
+            "codename": "delete_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view post",
+            "content_type": 7,
+            "codename": "view_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add place",
+            "content_type": 8,
+            "codename": "add_place"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change place",
+            "content_type": 8,
+            "codename": "change_place"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete place",
+            "content_type": 8,
+            "codename": "delete_place"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view place",
+            "content_type": 8,
+            "codename": "view_place"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add category",
+            "content_type": 9,
+            "codename": "add_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change category",
+            "content_type": 9,
+            "codename": "change_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete category",
+            "content_type": 9,
+            "codename": "delete_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view category",
+            "content_type": 9,
+            "codename": "view_category"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$sK8kYLt8JiUArpz0z2qmTS$r27RE+TXJRDxNjK93EqpXzAd2HiX9ox+BtkTr5Ib2QY=",
+            "last_login": "2022-06-21T19:02:15.756Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-06-21T19:02:01.285Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "posts",
+            "model": "post"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "places",
+            "model": "place"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "categories",
+            "model": "category"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "ymk0f9la7z7s8rwh2nlxoxsypcleykv2",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAUBf-FtSFc3rh0328gPC5SNZCUdmX8d9ukC92emTlv4sO2Vr8NXPycyZUAufxuMaQntgPkR2j3TlNv6zJHeij0pINOPePrdrp_BzWMutfKcc1KQaEFAsY9dFYBADJmIALjPBojRdIZo0lSyMxR2VAEIFrmEvl8AdhON8E:1o3j8h:oG-tSyOQO3NWFJAr1g2JPkw7rWGgyYm594wVdTCstNE",
+            "expire_date": "2022-07-05T19:02:15.762Z"
+        }
+    },
+    {
+        "model": "places.place",
+        "pk": 1,
+        "fields": {
+            "name": "New York",
+            "description": "New York, often called New York City (NYC) to distinguish it from the State of New York, is the most populous city in the United States",
+            "detailed_description": "New York, often called New York City (NYC) to distinguish it from the State of New York, is the most populous city in the United States. With a 2020 population of 8,804,190 distributed over 300.46 square miles (778.2 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban area.[9] With over 20.1 million people in its metropolitan statistical area and 23.5 million in its combined statistical area as of 2020, New York is one of the world's most populous megacities. New York City has been described as the cultural, financial, and media capital of the world, and is a significant influence on commerce, entertainment, research, technology, education, politics, tourism, dining, art, fashion, and sports. It is the most photographed city in the world.[10] Home to the headquarters of the United Nations, New York is an important center for international diplomacy,[11][12] an established safe haven for global investors,[13] and is sometimes described as the capital of the world.  Situated on one of the world's largest natural harbors, with water covering 36.4% of its surface area, New York City is composed of five boroughs, each of which is coextensive with a respective county of the state of New York. The five boroughs—Brooklyn (Kings County), Queens (Queens County), Manhattan (New York County), the Bronx (Bronx County), and Staten Island (Richmond County)—were created when local governments were consolidated into a single municipal entity in 1898.[14] The city and its metropolitan area constitute the premier gateway for legal immigration to the United States. As many as 800 languages are spoken in New York,[15] making it the most linguistically diverse city in the world. New York is home to more than 3.2 million residents born outside the United States, the largest foreign-born population of any city in the world as of 2016.[16][17] As of 2018, the New York metropolitan area is estimated to produce a gross metropolitan product (GMP) of nearly $1.8 trillion, ranking it first in the United States. If the New York metropolitan area were a sovereign state, it would have the eighth-largest economy in the world. New York is home to the highest number of billionaires of any city in the world.[18]  New York City traces its origins to a trading post founded on the southern tip of Manhattan Island by Dutch colonists in approximately 1624. The settlement was named New Amsterdam (Dutch: Nieuw Amsterdam) in 1626 and was chartered as a city in 1653. The city came under English control in 1664 and was renamed New York after King Charles II of England granted the lands to his brother, the Duke of York.[19][20] The city was regained by the Dutch in July 1673 and was renamed New Orange for one year and three months; the city has been continuously named New York since November 1674. New York City was the capital of the United States from 1785 until 1790,[21] and has been the largest U.S. city since 1790. The Statue of Liberty greeted millions of immigrants as they came to the U.S. by ship in the late 19th and early 20th centuries, and is a symbol of the U.S. and its ideals of liberty and peace.[22] In the 21st century, New York has emerged as a global node of creativity, entrepreneurship,[23] and environmental sustainability,[24][25] and as a symbol of freedom and cultural diversity.[26] In 2019, New York was voted the greatest city in the world per a survey of over 30,000 people from 48 cities worldwide, citing its cultural diversity.",
+            "image": "image/upload/v1655841074/htgs4ioftdngak4mqmqb.png",
+            "category": 3,
+            "place_type": "Private and Luxury",
+            "time_to_travel": "2022",
+            "googel_map_link": "https://goo.gl/maps/d23SfVkJKbQ2ZjKv6",
+            "created_at": "2022-06-21T19:51:15.238Z",
+            "updated_at": "2022-06-21T19:51:15.238Z"
+        }
+    },
+    {
+        "model": "places.place",
+        "pk": 2,
+        "fields": {
+            "name": "San Franscisco",
+            "description": "The bustling market is now partially populated by brand new buildings creating one of the future east african malls.",
+            "detailed_description": "San Diego is another attraction for different kind of vacationers. This city is rich in Mexican Culture and famous for delicious seafood. The climate of the city remains mild throughout the year and this is one of the main cause that visitors loves to include this destination in their tour plan. The famous sightseeing locations of the city are the Balboa Park, SeaWorld, San Diego Zoo, Gaslamp Quarter, Seaport Village, and Mission Beach etc. Besides these, dozens of botanic garden and various theme museums are finding here and there throughout the city. All these make this city a popular tourist destination.  The USA is a very popular travel destination for travelers. We have discussed on popular and famous 10 best places here. But it is not the end here; there are many places in the USA that are famous for travel. If you want to travel internationally and locally with your little kids, I suggest you bring the best travel-friendly stroller with you.  If you are traveling to a famous place outside our list, do not forget to share your experience with us. Thank you.  San Diego is another attraction for different kind of vacationers. This city is rich in Mexican Culture and famous for delicious seafood. The climate of the city remains mild throughout the year and this is one of the main cause that visitors loves to include this destination in their tour plan. The famous sightseeing locations of the city are the Balboa Park, SeaWorld, San Diego Zoo, Gaslamp Quarter, Seaport Village, and Mission Beach etc. Besides these, dozens of botanic garden and various theme museums are finding here and there throughout the city. All these make this city a popular tourist destination.  The USA is a very popular travel destination for travelers. We have discussed on popular and famous 10 best places here. But it is not the end here; there are many places in the USA that are famous for travel. If you want to travel internationally and locally with your little kids, I suggest you bring the best travel-friendly stroller with you.  If you are traveling to a famous place outside our list, do not forget to share your experience with us. Thank you.  San Diego is another attraction for different kind of vacationers. This city is rich in Mexican Culture and famous for delicious seafood. The climate of the city remains mild throughout the year and this is one of the main cause that visitors loves to include this destination in their tour plan. The famous sightseeing locations of the city are the Balboa Park, SeaWorld, San Diego Zoo, Gaslamp Quarter, Seaport Village, and Mission Beach etc. Besides these, dozens of botanic garden and various theme museums are finding here and there throughout the city. All these make this city a popular tourist destination.  The USA is a very popular travel destination for travelers. We have discussed on popular and famous 10 best places here. But it is not the end here; there are many places in the USA that are famous for travel. If you want to travel internationally and locally with your little kids, I suggest you bring the best travel-friendly stroller with you.  If you are traveling to a famous place outside our list, do not forget to share your experience with us. Thank you.",
+            "image": "image/upload/v1655854813/ccrdxq85kqs7dbxcsw7t.png",
+            "category": 4,
+            "place_type": "Private and Luxury",
+            "time_to_travel": "2022",
+            "googel_map_link": "https://goo.gl/maps/d23SfVkJKbQ2ZjKv6",
+            "created_at": "2022-06-21T23:40:13.516Z",
+            "updated_at": "2022-06-21T23:40:13.516Z"
+        }
+    },
+    {
+        "model": "places.place",
+        "pk": 3,
+        "fields": {
+            "name": "Las Vegas",
+            "description": "Las Vegas (/lɒsˈveɪɡəs/; Spanish for \"The Meadows\"), often known simply as Vegas, is the 26th-most populous city in the United States.",
+            "detailed_description": "Las Vegas (/lɒsˈveɪɡəs/; Spanish for \"The Meadows\"), often known simply as Vegas, is the 26th-most populous city in the United States, the most populous city in the state of Nevada, and the county seat of Clark County. The city anchors the Las Vegas Valley metropolitan area and is the largest city within the greater Mojave Desert.[7] Las Vegas is an internationally renowned major resort city, known primarily for its gambling, shopping, fine dining, entertainment, and nightlife. The Las Vegas Valley as a whole serves as the leading financial, commercial, and cultural center for Nevada.  The city bills itself as The Entertainment Capital of the World, and is famous for its luxurious and extremely large casino-hotels together with their associated activities. It is a top three destination in the United States for business conventions and a global leader in the hospitality industry, claiming more AAA Five Diamond hotels than any other city in the world.[8][9][10] Today, Las Vegas annually ranks as one of the world's most visited tourist destinations.[11][12] The city's tolerance for numerous forms of adult entertainment earned it the title of \"Sin City\",[13] and has made Las Vegas a popular setting for literature, films, television programs, and music videos.  Las Vegas was settled in 1905 and officially incorporated in 1911. At the close of the 20th century, it was the most populated North American city founded within that century (a similar distinction was earned by Chicago in the 19th century). Population growth has accelerated since the 1960s, and between 1990 and 2000 the population nearly doubled, increasing by 85.2%. Rapid growth has continued into the 21st century, and according to the United States Census Bureau, the city had 641,903 residents in 2020,[5] with a metropolitan population of 2,227,053.[14]  As with most major metropolitan areas, the name of the primary city (\"Las Vegas\" in this case) is often used to describe areas beyond official city limits. In the case of Las Vegas, this especially applies to the areas on and near the Las Vegas Strip, which are actually located within the unincorporated communities of Paradise and Winchester.[15][16] Nevada is the driest state, and Las Vegas is the driest major U.S. city. Over time and influenced by climate change, droughts in Southern Nevada have been increasing in frequency and severity,[17] putting a further strain on Las Vegas's water security.",
+            "image": "image/upload/v1656090215/qkc5cfjf9jqocslghmbn.png",
+            "category": 5,
+            "place_type": "Full-day Tours",
+            "time_to_travel": "2022",
+            "googel_map_link": "https://goo.gl/maps/d23SfVkJKbQ2ZjKv6",
+            "created_at": "2022-06-24T17:02:05.883Z",
+            "updated_at": "2022-06-24T17:02:05.883Z"
+        }
+    },
+    {
+        "model": "places.place",
+        "pk": 4,
+        "fields": {
+            "name": "Walt Disney World",
+            "description": "The Walt Disney World is placed at Orlando, Florida. It is the best place to visit if you have kids with you.",
+            "detailed_description": "The Walt Disney World Resort, also called Walt Disney World or Disney World, is an entertainment resort complex in Bay Lake and Lake Buena Vista, Florida, United States, near the cities of Orlando and Kissimmee. Opened on October 1, 1971, the resort is operated by Disney Parks, Experiences and Products, a division of The Walt Disney Company. The property covers nearly 25,000 acres (39 sq mi; 101 km2), of which half has been used.[5] The resort comprises four theme parks (Magic Kingdom, Epcot, Disney's Hollywood Studios, and Disney's Animal Kingdom), two water parks (Disney's Blizzard Beach and Disney's Typhoon Lagoon), 31 themed resort hotels, nine non-Disney hotels, several golf courses, a camping resort, and other entertainment venues, including the outdoor shopping center Disney Springs.  Designed to supplement Disneyland in Anaheim, California, which had opened in 1955, the complex was developed by Walt Disney in the 1960s. \"The Florida Project\", as it was known, was intended to present a distinct vision with its own diverse set of attractions. Walt Disney's original plans also called for the inclusion of an \"Experimental Prototype Community of Tomorrow\" (EPCOT), a planned community intended to serve as a testbed for new city-living innovations. Walt Disney died on December 15, 1966, during the initial planning of the complex. After his death, the company wrestled with the idea of whether to bring the Disney World project to fruition; however, Walt's older brother, Roy O. Disney, came out of retirement to make sure Walt's biggest dream was realized. Construction started in 1967, with the company instead building a resort similar to Disneyland, abandoning the experimental concepts for a planned community. The Magic Kingdom was the first theme park to open in the complex, in 1971, followed by Epcot (1982), Disney's Hollywood Studios (1989), and Disney's Animal Kingdom (1998). It was Roy who insisted the name of the entire complex be changed from Disney World to Walt Disney World, ensuring that people would remember that the project was Walt's dream.",
+            "image": "image/upload/v1656090473/betgdwo2vssbbr4tsy4d.png",
+            "category": 3,
+            "place_type": "Private and Luxury",
+            "time_to_travel": "2022",
+            "googel_map_link": "https://goo.gl/maps/d23SfVkJKbQ2ZjKv6",
+            "created_at": "2022-06-24T17:07:53.419Z",
+            "updated_at": "2022-06-24T17:07:53.419Z"
+        }
+    },
+    {
+        "model": "categories.category",
+        "pk": 1,
+        "fields": {
+            "name": "Hollywood",
+            "image": "image/upload/v1655838301/xpkou3rf8oc0ztfdgog2.png",
+            "description": "The bustling market is now partially populated by brand new buildings creating one of the future east african malls."
+        }
+    },
+    {
+        "model": "categories.category",
+        "pk": 2,
+        "fields": {
+            "name": "Miami",
+            "image": "image/upload/v1655838352/odqppxdycqykozsolkep.png",
+            "description": "The bustling market is now partially populated by brand new buildings creating one of the future east african malls."
+        }
+    },
+    {
+        "model": "categories.category",
+        "pk": 3,
+        "fields": {
+            "name": "New York",
+            "image": "image/upload/v1655838553/trcxdoemv4a49oplrn0q.png",
+            "description": "The bustling market is now partially populated by brand new buildings creating one of the future east african malls."
+        }
+    },
+    {
+        "model": "categories.category",
+        "pk": 4,
+        "fields": {
+            "name": "San Franscisco",
+            "image": "image/upload/v1655840978/s5olrnsrtcqtbbro9zea.png",
+            "description": "The bustling market is now partially populated by brand new buildings creating one of the future east african malls."
+        }
+    },
+    {
+        "model": "categories.category",
+        "pk": 5,
+        "fields": {
+            "name": "Las Vegas",
+            "image": "image/upload/v1655841007/h0ysoenhjtnj4ib9jghr.png",
+            "description": "The bustling market is now partially populated by brand new buildings creating one of the future east african malls."
+        }
+    }
+]
