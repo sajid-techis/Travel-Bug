@@ -1,15 +1,15 @@
-import {
-  createStore as reduxCreateStore,
-  combineReducers,
-  applyMiddleware,
-  compose,
-} from "redux";
 import { connectRouter, routerMiddleware } from "connected-react-router";
+import {
+  applyMiddleware,
+  combineReducers,
+  createStore as reduxCreateStore,
+} from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 
-import { PlacesReducer } from "../places/reducers";
 import { CategoriesReducer } from "../categories/reducers";
 import { FavourotesReducer } from "../favourites/reducers";
+import { PlacesReducer } from "../places/reducers";
 export default function createStore(history) {
   return reduxCreateStore(
     combineReducers({
@@ -18,6 +18,6 @@ export default function createStore(history) {
       categories: CategoriesReducer,
       favourites: FavourotesReducer,
     }),
-    compose(applyMiddleware(routerMiddleware(history), thunk))
+    composeWithDevTools(applyMiddleware(routerMiddleware(history), thunk))
   );
 }
