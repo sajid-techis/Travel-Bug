@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes,BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PlaceDetail from './components/common/PlaceDetail';
 import Favourites from "./containers/Favourites";
 import Home from "./containers/Home";
 import Places from "./containers/Places";
@@ -13,6 +13,7 @@ const Router = () => {
           <Route path="/" element={<Home />} />
           <Route path="/favourites" element={<Favourites />} />
           <Route path="/places" element={<Places />} />
+          <Route path="/place/:id" element={<PlaceDetail />} />
         </Routes>
       </BrowserRouter>
     </>

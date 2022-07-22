@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
-import Imglike from "../../assets/img/favorite.svg";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import Imglike from "../../assets/img/favorite.svg";
 import { addFavourite } from "../../reducks/favourites/operations";
 import { getFavourites } from "../../reducks/favourites/selectors";
 
 const Thumbnail = ({ place }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const clickFavourite = (place) => {
     dispatch(addFavourite(place));
   };
@@ -13,23 +15,26 @@ const Thumbnail = ({ place }) => {
   const favourites = getFavourites(selector);
   const [showLikeButton, setShowLikeButton] = useState(true);
   
+  const handleClick = ()=>{
+    navigate(`place/${place.id}`);
+  }
 
   useEffect(() => {
     let favoritePlace = favourites.filter(
-      (favourite) => favourite.id == place.id
+      (favourite) => favourite.id === place.id
     );
     if (favoritePlace.length > 0) {
       setShowLikeButton(false);
     }
-  }, [favourites]);
+  }, [favourites ,place.id]);
   return (
     <>
-      <div class="item">
-        <div class="item-image">
+      <div className="item" style={{cursor:'pointer'}} onClick={handleClick}>
+        <div className="item-image">
           {showLikeButton && (
-            <div class="like">
+            <div className="like" >
               <img
-                class="like"
+                className="like"
                 src={Imglike}
                 alt="favorites"
                 onClick={() => {
@@ -39,7 +44,7 @@ const Thumbnail = ({ place }) => {
             </div>
           )}
           
-            <img src={place.image} alt="image" />
+            <img src={place.image} alt="thumbnail" />
          
         </div>
         <div class="item-text">
