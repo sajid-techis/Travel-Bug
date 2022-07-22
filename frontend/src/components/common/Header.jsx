@@ -6,11 +6,12 @@ import MenuIcon from "../../assets/img/menu-icon.svg";
 import { useEffect } from "react";
 
 const Header = () => {
-  const [temp, setTemp] = useState();
   const [isActive, setIsActive] = useState(false);
+  const [temp, setTemp] = useState();
+
   const handleClick = (e) => {
     e.stopPropagation();
-    console.log("click");
+
     setIsActive(!isActive);
   };
 
@@ -19,6 +20,8 @@ const Header = () => {
       setTemp(window.innerWidth);
     };
   }, []);
+
+  useEffect(() => {}, []);
 
   return (
     <>
@@ -37,12 +40,16 @@ const Header = () => {
                 e.stopPropagation();
                 setIsActive(false);
               }}
-              style={{ display: isActive ? "flex" : "none" }}
+              style={{ display: "flex" }}
             >
-              <Link to="/">HOME</Link>
-              <a href="#wonders">WONDERS IN USA</a>
-              <a href="#attractions">TOURIST ATTRACTION</a>
-              <Link to="/favourites">FAVOURITES</Link>
+              {isActive && (
+                <>
+                  <Link to="/">HOME</Link>
+                  <a href="#wonders">WONDERS IN USA</a>
+                  <a href="#attractions">TOURIST ATTRACTION</a>
+                  <Link to="/favourites">FAVOURITES</Link>
+                </>
+              )}
             </div>
           ) : (
             <div className="right-nav" style={{}}>
@@ -53,7 +60,16 @@ const Header = () => {
             </div>
           )}
           <div className="mb-menu">
-            <img src={MenuIcon} alt="menu" onClick={(e) => handleClick(e)} />
+            {isActive ? (
+              <div
+                onClick={() => setIsActive(false)}
+                style={{ cursor: "pointer" }}
+              >
+                X
+              </div>
+            ) : (
+              <img src={MenuIcon} alt="menu" onClick={(e) => handleClick(e)} />
+            )}
             <ul></ul>
           </div>
         </nav>
