@@ -29,10 +29,10 @@ const Thumbnail = ({ place }) => {
   }, [favourites ,place.id]);
   return (
     <>
-      <div className="item" style={{cursor:'pointer'}} onClick={handleClick}>
+      <div className="item">
         <div className="item-image">
           {showLikeButton && (
-            <div className="like" >
+            <div className="like">
               <img
                 className="like"
                 src={Imglike}
@@ -43,11 +43,14 @@ const Thumbnail = ({ place }) => {
               />
             </div>
           )}
-          
-            <img src={place.image} alt="thumbnail" />
-         
+
+          <img src={place.image} alt="thumbnail" />
         </div>
-        <div class="item-text">
+        <div
+          class="item-text"
+          style={{ cursor: "pointer" }}
+          onClick={handleClick}
+        >
           <h1>{place.name}</h1>
           <p>{place.description}</p>
         </div>

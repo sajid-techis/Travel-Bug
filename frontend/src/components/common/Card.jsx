@@ -40,14 +40,8 @@ const Card = ({ place }) => {
           <div class="category-heading">
             <h1>{place.name}</h1>
           </div>
-          <div class="gridsubheading">
-            <h2>{place.place_type}</h2>
-          </div>
-          <div class="gridtext">
-            <p>"Opens"{place.time_to_travel}"hours."</p>
-          </div>
-          <div className="detailed-description">
-            <p>{place.detailed_description}</p>
+          <div className="description">
+            <p>{place.description}</p>
           </div>
           <div class="input-button">
             <a href={place.googel_map_link} target="_blank">
