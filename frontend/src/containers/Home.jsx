@@ -1,20 +1,18 @@
-import React, { useEffect } from "react";
-import Footer from "../components/common/Footer";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import MainImg from "../assets/img/main-banner.png";
+import MapsImg from "../assets/img/map.png";
+import SubsBackground from "../assets/img/subscription-background.png";
+import WaveIcon from "../assets/img/wave-icon.svg";
 import Categories from "../components/common/Categories";
-import Header from "../components/common/Header";
 import Search from "../components/common/Search";
 import Thumbnail from "../components/common/Thumbnail";
-import WaveIcon from "../assets/img/wave-icon.svg";
-import SubsBackground from "../assets/img/subscription-background.png";
-import { getPlaces } from "../reducks/places/selectors";
-import { getCategories } from "../reducks/categories/selectors";
-import { fetchPlaces } from "../reducks/places/operations";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchCategories } from "../reducks/categories/operations";
-import { fetchFromLocalStorage } from "../reducks/favourites/operations";
-import MainImg from "../assets/img/main-banner.png";
 import Videos from "../components/common/Videos";
-import MapsImg from '../assets/img/map.png';
+import { fetchCategories } from "../reducks/categories/operations";
+import { getCategories } from "../reducks/categories/selectors";
+import { fetchFromLocalStorage } from "../reducks/favourites/operations";
+import { fetchPlaces } from "../reducks/places/operations";
+import { getPlaces } from "../reducks/places/selectors";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -30,13 +28,10 @@ const Home = () => {
     dispatch(fetchFromLocalStorage());
   }, []);
 
-  
-
   // console.log(categories);
 
   return (
     <>
-      <Header />
       <main>
         <section class="main-image">
           <img src={MainImg} alt="main-banner" />
@@ -85,10 +80,9 @@ const Home = () => {
           </div>
         </section>
         <section className="maps">
-           <img src={MapsImg} alt="" />
+          <img src={MapsImg} alt="" />
         </section>
       </main>
-      <Footer />
     </>
   );
 };
