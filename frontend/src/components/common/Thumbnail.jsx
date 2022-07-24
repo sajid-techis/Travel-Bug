@@ -14,10 +14,10 @@ const Thumbnail = ({ place }) => {
   const selector = useSelector((state) => state);
   const favourites = getFavourites(selector);
   const [showLikeButton, setShowLikeButton] = useState(true);
-  
-  const handleClick = ()=>{
+
+  const handleClick = () => {
     navigate(`place/${place.id}`);
-  }
+  };
 
   useEffect(() => {
     let favoritePlace = favourites.filter(
@@ -26,13 +26,13 @@ const Thumbnail = ({ place }) => {
     if (favoritePlace.length > 0) {
       setShowLikeButton(false);
     }
-  }, [favourites ,place.id]);
+  }, [favourites, place.id]);
   return (
     <>
-      <div className="item" style={{cursor:'pointer'}} onClick={handleClick}>
+      <div className="item" style={{ cursor: "pointer" }} onClick={handleClick}>
         <div className="item-image">
           {showLikeButton && (
-            <div className="like" >
+            <div className="like">
               <img
                 className="like"
                 src={Imglike}
@@ -43,9 +43,8 @@ const Thumbnail = ({ place }) => {
               />
             </div>
           )}
-          
-            <img src={place.image} alt="thumbnail" />
-         
+
+          <img src={place.image} alt="thumbnail" />
         </div>
         <div class="item-text">
           <h1>{place.name}</h1>

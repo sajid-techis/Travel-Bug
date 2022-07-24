@@ -1,26 +1,27 @@
-import React, {useState} from "react";
-import {Link} from 'react-router-dom'
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assets/img/logo.svg";
 import MenuIcon from "../../assets/img/menu-icon.svg";
-import  logo  from '../../assets/img/logo.svg'
 
 import { useEffect } from "react";
 
-
 const Header = () => {
-  const [isActive, setIsActive] = useState();
+  const [isActive, setIsActive] = useState(false);
+  const [temp, setTemp] = useState();
 
-  const handleClick = () => {
-    setIsActive(current => !current);
+  const handleClick = (e) => {
+    e.stopPropagation();
+
+    setIsActive(!isActive);
   };
-  const [temp,setTemp]= useState()
-  window.onresize = function(e) {
-    setTemp(window.innerWidth)
-  };
 
-  useEffect(()=> {
-    temp < 540 ? setIsActive(false) : setIsActive(true)
-  }, [temp])
+  useEffect(() => {
+    window.onresize = function (e) {
+      setTemp(window.innerWidth);
+    };
+  }, []);
 
+  useEffect(() => {}, []);
 
   return (
     <>
@@ -31,23 +32,44 @@ const Header = () => {
               <img src={logo} alt="logo" />
             </Link>
           </div>
-          <div
-            class="right-nav"
-            style={{
-              display: isActive ? "flex" : "none",
-            }}
-          >
-            <Link to="/">HOME</Link>
-            {temp < 540 ? <br /> : null}
-            <a href="#wonders">WONDERS IN USA</a>
-            {temp < 540 ? <br /> : null}
-            <a href="#attractions">TOURIST ATTRACTION</a>
-            {temp < 540 ? <br /> : null}
-            <Link to="/favourites">FAVOURITES</Link>
-            {temp < 540 ? <br /> : null}
-          </div>
+
+          {temp < 540 ? (
+            <div
+              className="right-nav"
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsActive(false);
+              }}
+              style={{ display: "flex" }}
+            >
+              {isActive && (
+                <>
+                  <Link to="/">HOME</Link>
+                  <a href="#wonders">WONDERS IN USA</a>
+                  <a href="#attractions">TOURIST ATTRACTION</a>
+                  <Link to="/favourites">FAVOURITES</Link>
+                </>
+              )}
+            </div>
+          ) : (
+            <div className="right-nav" style={{}}>
+              <Link to="/">HOME</Link>
+              <a href="#wonders">WONDERS IN USA</a>
+              <a href="#attractions">TOURIST ATTRACTION</a>
+              <Link to="/favourites">FAVOURITES</Link>
+            </div>
+          )}
           <div className="mb-menu">
-            <img src={MenuIcon} alt="menu" onClick={handleClick} />
+            {isActive ? (
+              <div
+                onClick={() => setIsActive(false)}
+                style={{ cursor: "pointer" }}
+              >
+                X
+              </div>
+            ) : (
+              <img src={MenuIcon} alt="menu" onClick={(e) => handleClick(e)} />
+            )}
             <ul></ul>
           </div>
         </nav>

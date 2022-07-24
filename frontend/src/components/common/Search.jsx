@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Imgsearch from "../../assets/img/search.svg";
-import { useDispatch } from "react-redux";
 import { push } from "connected-react-router";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import Imgsearch from "../../assets/img/search.svg";
 
 const Search = () => {
   const dispatch = useDispatch();
@@ -27,10 +27,10 @@ const Search = () => {
             onChange={inputSearch}
             placeholder="Search your destination"
           />
-          <a onclick={() => console.log("test")}>
+          <a href="null">
             <img
               className="search-icon"
-              onclick={() => {
+              onClick={() => {
                 alert("test");
               }}
               src={Imgsearch}
